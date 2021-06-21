@@ -57,3 +57,11 @@ textarea {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* Inputs and buttons*/
+input,
+button,
+.button {
+  border-radius: 0.8rem;
+  height: 5rem;
+}

@@ -28,6 +28,15 @@ html {
   font-size: 62.5%;
 }
 
+.content header {
+  width: 80%;
+  margin: 3.5rem auto;
+}
+
+.content header img {
+  width: 16.7rem;
+}
+
 body {
   height: 100vh;
   background: var(--background);

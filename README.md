@@ -41,7 +41,7 @@ O Rocket.Q é uma aplicação de interação através de perguntas, sendo possí
 
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/vp3iFfd1ohCbHyDX9jCiQi/Roquet.q). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
-## Contribuições
+## ✨ Contribuições
 
 1. Faça um Fork do projeto
 2. Crie uma Branch para sua Feature (`git checkout -b feature/SuaFeature`)
@@ -56,4 +56,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+## 📱 Contatos
+
+| [<img src="https://avatars.githubusercontent.com/u/83595554?v=4" width="100"><br> @MateusCampoSantos](https://github.com/MateusCampoSantos) |
+| :-----------------------------------------------------------------------------------------------------------------------------------------: |

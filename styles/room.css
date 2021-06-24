@@ -103,6 +103,10 @@
   align-items: center;
 }
 
+.question-wrapper .question-content p {
+  margin-left: 1.6rem;
+}
+
 .question-wrapper .actions {
   display: flex;
   align-items: center;

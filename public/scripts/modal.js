@@ -1,5 +1,7 @@
 module.exports = function Modal() {
-  function open() {}
+  function open() {
+    document.querySelector(".modal-wrapper").classList.add("active");
+  }
 
   function close() {}
 

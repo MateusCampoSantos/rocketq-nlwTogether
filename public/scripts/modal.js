@@ -1,4 +1,4 @@
-module.exports = function Modal() {
+export default function Modal() {
   function open() {
     document.querySelector(".modal-wrapper").classList.add("active");
   }
@@ -9,4 +9,4 @@ module.exports = function Modal() {
     open,
     close,
   };
-};
+}

@@ -2,20 +2,30 @@ import Modal from "./modal.js";
 
 const modal = Modal();
 
+const modalTitle = document.querySelector(".modal h2");
+const modalDescription = document.querySelector(".modal p");
+const modalButton = document.querySelector(".modal button");
+
 // Pegando todos os botões com class check
 const checkButtons = document.querySelectorAll(".actions a.check");
 
 checkButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    modal.open();
-  });
+  button.addEventListener("click", handleClick);
 });
 
 // Pegando todos os botões com class delete
 const deleteButton = document.querySelectorAll(".actions a.delete");
 
 deleteButton.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    modal.open();
-  });
+  button.addEventListener("click", (event) => handleClick(event, false));
 });
+
+function handleClick(event, check = true) {
+  modalTitle.innerHTML = check ? "Marcar como lida" : "Excluir pergunta";
+  modalDescription.innerHTML = check
+    ? "Tem certeza que deseja marcar está pergunta como lida?"
+    : "Tem certeza que deseja excluir está pergunta?";
+  modalButton.innerHTML = check ? "Marcar como lida" : "Sim, excluir";
+
+  modal.open();
+}

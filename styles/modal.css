@@ -21,3 +21,9 @@
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+
+.modal-wrapper .modal .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

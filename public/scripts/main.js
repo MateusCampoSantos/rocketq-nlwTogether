@@ -10,3 +10,12 @@ checkButtons.forEach((button) => {
     modal.open();
   });
 });
+
+// pegando todos os botões com class delete
+const deleteButton = document.querySelectorAll(".actions a.delete");
+
+deleteButton.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    modal.open();
+  });
+});

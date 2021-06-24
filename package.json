@@ -1,7 +1,7 @@
 {
   "name": "rocketq-nlwTogether",
   "version": "1.0.0",
-  "description": "<h1 align=\"center\">\r   <img alt=\"Rocket.Q\" title=\"Rocket.Q\" src=\".github/rocketq.png\" width=\"220px\" />\r </h1>",
+  "description": "Projeto desenvolvido para gerenciar perguntas anonimas de usuarios direcionas ao dono da página. Projeto feito para praticar e fixar conteudos aprendidos até o momento.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +11,14 @@
     "url": "git+https://github.com/MateusCampoSantos/rocketq-nlwTogether.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mateus de Campos",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MateusCampoSantos/rocketq-nlwTogether/issues"
   },
-  "homepage": "https://github.com/MateusCampoSantos/rocketq-nlwTogether#readme"
+  "homepage": "https://github.com/MateusCampoSantos/rocketq-nlwTogether#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
 }

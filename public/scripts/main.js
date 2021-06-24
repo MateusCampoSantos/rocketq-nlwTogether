@@ -11,7 +11,7 @@ checkButtons.forEach((button) => {
   });
 });
 
-// pegando todos os botões com class delete
+// Pegando todos os botões com class delete
 const deleteButton = document.querySelectorAll(".actions a.delete");
 
 deleteButton.forEach((button) => {

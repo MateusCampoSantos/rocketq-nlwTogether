@@ -10,6 +10,3 @@ checkButtons.forEach((button) => {
     modal.open();
   });
 });
-
-//Abrir modal
-modal.open();

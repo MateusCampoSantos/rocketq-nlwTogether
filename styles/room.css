@@ -131,3 +131,9 @@
 .question-wrapper .actions > a > img {
   margin-right: 0.8rem;
 }
+
+/* Question Read */
+
+.question-wrapper.read {
+  background: var(--grey-medium);
+}

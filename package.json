@@ -4,7 +4,7 @@
   "description": "Projeto desenvolvido para gerenciar perguntas anonimas de usuarios direcionas ao dono da página. Projeto feito para praticar e fixar conteudos aprendidos até o momento.",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "nodemon ."
   },
   "repository": {
     "type": "git",

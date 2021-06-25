@@ -7,7 +7,7 @@ route.get("/", (req, res) => {
   res.render("index", { page: "enter-room" });
 });
 
-route.get("/room", (req, res) => {
+route.get("/room/:room", (req, res) => {
   res.render("room");
 });
 

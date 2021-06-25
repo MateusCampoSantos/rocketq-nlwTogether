@@ -14,6 +14,8 @@ const initDb = {
         description TEXT,
         check INT
     )`);
+
+    await db.close();
   },
 };
 

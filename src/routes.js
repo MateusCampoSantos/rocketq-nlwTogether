@@ -7,11 +7,11 @@ route.get("/", (req, res) => {
 });
 
 route.get("/room", (req, res) => {
-  res.render("room", { page: "create-pass" });
+  res.render("room");
 });
 
 route.get("/create-pass", (req, res) => {
-  res.render("create-pass");
+  res.render("index", { page: "create-pass" });
 });
 
 route.post("/room/:room/:question/:action", questionController.index);

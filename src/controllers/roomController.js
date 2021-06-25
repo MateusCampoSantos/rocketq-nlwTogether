@@ -1,6 +1,6 @@
 module.exports = {
   create(req, res) {
-    let roomId = 123456;
+    let roomId;
 
     for (var i = 0; i < 6; i++) {
       roomId += Math.floor(Math.random() * 10).toString();

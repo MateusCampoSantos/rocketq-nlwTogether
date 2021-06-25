@@ -23,6 +23,12 @@ deleteButton.forEach((button) => {
 function handleClick(event, check = true) {
   event.preventDefault();
 
+  const slug = check ? "check" : "delete";
+  const roomId = document.querySelector("#room-id").dataset.id;
+
+  const form = document.querySelector(".modal form");
+  form.setAttribute("action", `/room/${roomId}/:question/${slug}`);
+
   modalTitle.innerHTML = check ? "Marcar como lida" : "Excluir pergunta";
   modalDescription.innerHTML = check
     ? "Tem certeza que deseja marcar está pergunta como lida?"

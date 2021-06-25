@@ -21,11 +21,16 @@ deleteButton.forEach((button) => {
 });
 
 function handleClick(event, check = true) {
+  event.preventDefault();
+
   modalTitle.innerHTML = check ? "Marcar como lida" : "Excluir pergunta";
   modalDescription.innerHTML = check
     ? "Tem certeza que deseja marcar está pergunta como lida?"
     : "Tem certeza que deseja excluir está pergunta?";
   modalButton.innerHTML = check ? "Marcar como lida" : "Sim, excluir";
+  check
+    ? modalButton.classList.remove("red")
+    : modalButton.classList.add("red");
 
   modal.open();
 }

@@ -19,9 +19,12 @@ module.exports = {
 
     await db.run(`CREATE TABLE questions (
         description,
-        room)VALUES(
+        room,
+        read
+        )VALUES(
           ${question},
-          ${room}
+          ${room},
+          0
         )`);
   },
 };

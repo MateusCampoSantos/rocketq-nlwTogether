@@ -44,6 +44,6 @@ module.exports = {
       `SELECT * FROM questions WHERE room = ${roomId}`
     );
 
-    res.render("room", { roomId: roomId, question: questions });
+    res.render("room", { roomId: roomId, questions: questions });
   },
 };

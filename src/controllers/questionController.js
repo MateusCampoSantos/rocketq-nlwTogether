@@ -9,4 +9,8 @@ module.exports = {
       `room = ${roomId}, question = ${questionId}, action = ${action}, password = ${password}`
     );
   },
+
+  create(req, res) {
+    const question = req.body.question;
+  },
 };

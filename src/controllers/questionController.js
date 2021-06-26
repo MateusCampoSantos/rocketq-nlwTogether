@@ -15,16 +15,18 @@ module.exports = {
   async create(req, res) {
     const db = await database();
     const question = req.body.question;
-    const room = req.params.room;
+    const roomId = req.params.room;
 
-    await db.run(`CREATE TABLE questions (
+    await db.run(`INSERT INTO questions (
         description,
         room,
         read
         )VALUES(
-          ${question},
-          ${room},
+          "${question}",
+          ${roomId},
           0
         )`);
+
+    res.redirect(`/room/${roomId}`);
   },
 };

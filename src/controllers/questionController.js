@@ -18,8 +18,10 @@ module.exports = {
     const room = req.params.room;
 
     await db.run(`CREATE TABLE questions (
-        description TEXT,
-        read INT,
-        room INT`);
+        description,
+        room)VALUES(
+          ${question},
+          ${room}
+        )`);
   },
 };

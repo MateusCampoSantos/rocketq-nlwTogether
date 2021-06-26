@@ -36,4 +36,9 @@ module.exports = {
 
     res.redirect(`/room/${roomId}`);
   },
+
+  open(req, res) {
+    const roomId = req.query.room;
+    res.render("room", { roomId: roomId });
+  },
 };

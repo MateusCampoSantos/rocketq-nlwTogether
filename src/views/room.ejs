@@ -63,6 +63,7 @@
           <h2 class="sr-only">Perguntas</h2>
 
           <div class="questions">
+            <%if (!isNoQuestions){%> <%- include('parts/no-question') %> <%}%>
             <% questions.forEach(question => { %>
 
             <div class="question-wrapper">

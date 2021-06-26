@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
 
-    <script src="scripts/main.js" defer type="module"></script>
+    <script src="/scripts/main.js" defer type="module"></script>
     <title>Rocket.Q - Perguntas e Respostas</title>
   </head>
   <body>
@@ -86,7 +86,7 @@
               </div>
             </div>
 
-            <%}) %> <% questionsRead.forEach(questionRead => { %>
+            <%}); %> <% questionsRead.forEach(questionRead => { %>
             <div class="question-wrapper read">
               <div class="question-content">
                 <div class="user">
@@ -103,7 +103,7 @@
                 </a>
               </div>
             </div>
-            <%})%>
+            <%}); %>
           </div>
         </section>
       </main>

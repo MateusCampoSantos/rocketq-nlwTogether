@@ -14,6 +14,6 @@ route.get("/room/:room", roomController.open);
 route.post("/create-room", roomController.create);
 
 route.post("/question/:room/:question/:action", questionController.index);
-route.post("/question/create", questionController.create);
+route.post("/question/create/:room", questionController.create);
 
 module.exports = route;

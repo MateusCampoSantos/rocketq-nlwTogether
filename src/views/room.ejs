@@ -71,7 +71,7 @@
                   <img src="/images/user.svg" alt="Avatar" />
                 </div>
                 <div class="question">
-                  <p><% question.description %></p>
+                  <p><%= question.description %></p>
                 </div>
               </div>
               <div class="actions">
@@ -86,15 +86,14 @@
               </div>
             </div>
 
-            <%}) %>
-
+            <%}) %> <% questionsRead.forEach(questionRead => { %>
             <div class="question-wrapper read">
               <div class="question-content">
                 <div class="user">
                   <img src="/images/user.svg" alt="Avatar" />
                 </div>
                 <div class="question">
-                  <p>O que é TypeScript?</p>
+                  <p><%= questionRead.description %></p>
                 </div>
               </div>
               <div class="actions">
@@ -104,6 +103,7 @@
                 </a>
               </div>
             </div>
+            <%})%>
           </div>
         </section>
       </main>

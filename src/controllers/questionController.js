@@ -1,3 +1,5 @@
+const database = require("../database/config");
+
 module.exports = {
   index(req, res) {
     const roomId = req.params.room;
@@ -10,8 +12,14 @@ module.exports = {
     );
   },
 
-  create(req, res) {
+  async create(req, res) {
+    const db = await database();
     const question = req.body.question;
     const room = req.params.room;
+
+    await db.run(`CREATE TABLE questions (
+        description TEXT,
+        read INT,
+        room INT`);
   },
 };

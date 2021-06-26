@@ -5,20 +5,32 @@ module.exports = {
     const db = await Database();
     const pass = req.body.password;
     let roomId;
+    let isRoom = true;
 
-    for (var i = 0; i < 6; i++) {
-      i == 0
-        ? (roomId = Math.floor(Math.random() * 10).toString())
-        : (roomId += Math.floor(Math.random() * 10).toString());
-    }
+    while (isRoom) {
+      /*Gera numero da sala*/
+      for (var i = 0; i < 6; i++) {
+        i == 0
+          ? (roomId = Math.floor(Math.random() * 10).toString())
+          : (roomId += Math.floor(Math.random() * 10).toString());
+      }
 
-    await db.run(`INSERT INTO rooms (
+      /*Verificar se esse numero já existi*/
+      const roomsExistIds = await db.all(`SELECT id FROM rooms`);
+
+      isRoom = roomsExistIds.some((roomExistId) => roomExistId === roomId);
+
+      if (!isRoom) {
+        /*Inseri o numero da sala no banco de dados */
+        await db.run(`INSERT INTO rooms (
         id,
         pass
     ) VALUES (
         ${parseInt(roomId)},
         ${pass}
     )`);
+      }
+    }
 
     await db.close();
 
